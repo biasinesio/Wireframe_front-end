@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        @font-face {
+            font-family: 'Rozha one';
+            src: url('rozha-one/rozha-one/RozhaOne-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Montserrat Medium';
+            src: url('Montserrat/montserrat/Montserrat-Medium.otf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Montserrat Light';
+            src: url('Montserrat/montserrat/Montserrat-Light.otf') format('truetype');
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: darkgray;
+        }
+
+        #home {
+            font-family: Montserrat Light;
+        }
+
+        #contato {
+            font-family: Montserrat Medium;
+        }
+
+        #adm {
+            font-family: Montserrat Light;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <header id="header">
+        <div id="h-NomeSite">
+            <h1>QueixaExpressa</h1>
+        </div>
+        <div id="HomeCttAdm">
+            <a id="home" href="Index.html">HOME</a> |
+            <a id="contato" href="Contato.html">CONTATO</a> |
+            <a id="adm" href="Login.html">ÁREA ADM</a>
+        </div>
+    </header>
+    <div class="Contato">
+        <form id="contatoEsc" action="">
+            <h1>Mensagem</h1>
+            <div class="MensagensContato">
+                <div id="nomeContato">
+                    <input type="text" placeholder="Nome" required="" />
+                </div>
+                <br>
+                <div id="emailContato">
+                    <input type="email" placeholder="E-mail" required="" />
+                </div>
+            </div>
+            <br>
+            <div>
+                <textarea id="mensagemContato" type="text" placeholder="Digite sua mensagem" required=""
+                    rows="7"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="button" id="bt_enviar_Contato" onclick="pegarDadosContato()">Enviar</button>
+         </form>
+    </div>
+    </div>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="api.js"></script>
+    <script src="script_Contato.js"></script>
+</body>
+
+</html>

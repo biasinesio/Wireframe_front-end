@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        @font-face {
+            font-family: 'Rozha one';
+            src: url('rozha-one/rozha-one/RozhaOne-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Montserrat Medium';
+            src: url('Montserrat/montserrat/Montserrat-Medium.otf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Montserrat Light';
+            src: url('Montserrat/montserrat/Montserrat-Light.otf') format('truetype');
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: darkgray;
+        }
+
+        #home {
+            font-family: Montserrat Light;
+        }
+
+        #contato {
+            font-family: Montserrat Light;
+        }
+
+        #adm {
+            font-family: Montserrat Medium;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body class="background">
+        <header id="header">
+            <div id="h-NomeSite">
+                <h1>QueixaExpressa</h1>
+            </div>
+            <div id="HomeCttAdm">
+                <a id="home" href="Index.html">HOME</a> |
+                <a id="contato" href="Contato.html">CONTATO</a> |
+                <a id="adm" href="Login.html">ÁREA ADM</a>
+            </div>
+        </header>
+        <div class="Login">
+            <form id="loginEsc" action="">
+                <h1>Login</h1>
+                <div class="LoginAdm">
+                    <div id="emailLogin">
+                        <input type="email" placeholder="E-mail" required="" id="email-login" />
+                    </div>
+                    <br>
+                    <div id="senhaLogin">
+                        <input type="password" placeholder="Senha" required="" id="password" />
+                    </div>
+                    <br>
+                    <div id="btLogin">
+                        <button type="button" id="bt_fazer_login" onclick="fazerLogin()">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+
+        <script src="jquery-3.6.4.min.js"></script>
+        <script src="api.js"></script>
+        <script src="script_Login.js"></script>
+    </body>
+
+</html>
